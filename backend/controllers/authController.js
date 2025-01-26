@@ -1,7 +1,6 @@
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { error, success } = require("../utils/responseWrapper");
 const Wallet = require("../models/Wallet");
 
 const signupController = async (req, res) => {
@@ -128,7 +127,7 @@ const generateAccessTokens = (data) => {
 const generateRefreshTokens = (data) => {
   try {
     const token = jwt.sign(data, process.env.REFRESH_TOKEN_PRIVATE_KEY, {
-      expiresIn: "1y",
+      expiresIn: "30d",
     });
     console.log(token);
     return token;

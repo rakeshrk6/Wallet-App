@@ -9,7 +9,6 @@ const getBalance = async (req, res) => {
 
   // Fetch wallet by user
   const wallet = await Wallet.findOne({ user: objectId });
-  console.log(wallet);
 
   res.json({ balance: wallet.balance });
 };

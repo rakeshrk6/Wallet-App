@@ -9,6 +9,7 @@ const connect = require("./db connection/connection");
 const requireUser = require("./middlewares/requireUser");
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger-output.json");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 const PORT = 8000;
@@ -23,6 +24,7 @@ app.use(
 app.set("trust proxy", 1);
 app.use(bodyParser.json());
 app.use(express.json());
+app.use(cookieParser());
 
 //routes
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));

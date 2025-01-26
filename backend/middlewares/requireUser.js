@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const { error } = require("../utils/responseWrapper");
 
 module.exports = async (req, res, next) => {
   if (req.user) {
@@ -13,7 +12,7 @@ module.exports = async (req, res, next) => {
     !req.headers.authorization.startsWith("Bearer")
   ) {
     console.log("request", req.user);
-    return res.send(error(401, "Authorization header is required"));
+    return res.status(401).send("Authorization header is required");
   }
 
   const accessToken = req.headers.authorization.split(" ")[1];
