@@ -5,7 +5,6 @@ const doc = {
     title: "Wallet App API",
     description: "This is API documentation of Wallet Web App",
   },
-  host: "localhost:8000",
 };
 
 const outputFile = "./swagger-output.json";

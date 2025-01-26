@@ -5,7 +5,7 @@
     "description": "This is API documentation of Wallet Web App",
     "version": "1.0.0"
   },
-  "host": "localhost:8000",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
     "http"
