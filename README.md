@@ -1,13 +1,13 @@
 # Wallet Application
 
-A simple wallet application that allows users to manage their wallet balance, track transactions, and perform transfers between users. The application includes features like user authentication, adding and withdrawing funds, and viewing transaction history.
+A simple wallet application that allows users to manage their wallet balance, track transactions, and perform transfers between users. The application includes features like user authentication, adding and withdrawing funds, transfering funds, viewing spent insights and viewing transaction history.
 
 ## Tech Stack
 - **Frontend**: React.js
 - **Backend**: Node.js with Express
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Token)
-- **Styling**: Material UI (for frontend)
+- **Styling**: Material UI, TailwindCSS (for frontend)
 
 ## Setup and Run Instructions
 
