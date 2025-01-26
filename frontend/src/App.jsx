@@ -3,11 +3,9 @@ import Login from "./components/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
-import { useEffect, useState } from "react";
-import TransactionTable from "./components/TransactionTable";
 import Transaction from "./components/Transaction";
 import { Toaster } from "react-hot-toast";
-import RequireUser from "./utils/requireUser";
+import RequireUser from "./utils/RequireUser";
 import OnlyIfNotLoggedIn from "./utils/OnlyIfNotLoggedIn";
 
 function App() {
