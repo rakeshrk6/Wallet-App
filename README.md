@@ -73,3 +73,7 @@ npm start
 ```
 
 The app will be available at `http://localhost:5173` (Frontend) and the API at `http://localhost:8000` (Backend).
+
+### 5. API Documentation
+vist link below to see api doc by Swagger :
+`https://wallet-server-83og.onrender.com/api-docs`
