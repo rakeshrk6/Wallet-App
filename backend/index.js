@@ -7,6 +7,8 @@ const authRouter = require("./routes/authRouter");
 const walletRouter = require("./routes/walletRouter");
 const connect = require("./db connection/connection");
 const requireUser = require("./middlewares/requireUser");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger-output.json");
 
 const app = express();
 const PORT = 8000;
@@ -23,6 +25,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 //routes
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use("/auth", authRouter);
 app.use("/wallet", requireUser, walletRouter);
 
