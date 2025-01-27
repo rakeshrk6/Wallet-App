@@ -69,7 +69,7 @@ node index.js
 Run the frontend server:
 ```bash
 cd frontend
-npm start
+npm run dev
 ```
 
 The app will be available at `http://localhost:5173` (Frontend) and the API at `http://localhost:8000` (Backend).
